@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 
 class Ising:
     """ Simulation of the Ising model """
-    
+
     def __init__(self, n, beta):
         self.config = 2*np.round(np.random.rand(n, n)) - 1
         self.beta = beta
@@ -58,8 +58,8 @@ class Ising:
         plt.show()
 
 if __name__ == "__main__" :
-    iter = 10000000
-    size = 1000
+    iter = 1000000
+    size = 100
     beta = 2000
 
     model = Ising(size, beta)
